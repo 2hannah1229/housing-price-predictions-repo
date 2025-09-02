@@ -5,6 +5,8 @@ This project analyzes the FHFA House Price Index (FHFA HPI), which is a set of p
 
 ### Data Loading
 I downloaded data from https://www.fhfa.gov/data/hpi/datasets?tab=annual-data. There are 2556 rows, each of the 50 states being represented. However, I selected 9 states (CA, TX, NY, FL, PA, IL, OH, GA, and NC) based on economic significance and population.
+
+
 **Columns**
 - State: Name of U.S. state (50)
 - Abbreviation: Standard two-letter postal abbreviation. I used this column the most to refer to the states in my hpi predictor.
