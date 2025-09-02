@@ -15,20 +15,20 @@ I downloaded data from https://www.fhfa.gov/data/hpi/datasets?tab=annual-data. T
 - HPI with 1990 Base: The HPI value normalized to a base value of 100 in the year 1990, allowing for comparison across states and years.
 - HPI with 2000 Base: The HPI value normalized to a base value of 100 in the year 2000, providing an alternative reference point for comparison.
 
-I cleaned unused columns as neccessary. 
+I cleaned unused columns as necessary. 
 
 ## Visualization 
-I plotted HPI trends for key states for both the 1990 base and 2000 base to compare house price movements over time. I observed that some states had lines that were more closely correlated than others, so I created a seaborn plot to visualize correlations between states to identify similar housing market dynamics for predictive analytics. I also created a bar chart to better visualize which states had the highest vs. lowest correlations based on the seaborn plot. 
+I plotted HPI trends for key states for both the 1990 base and 2000 base to compare house price movements over time. I observed that some states had lines that were more closely correlated than others, so I created a seaborn plot to visualize correlations between states to identify similar housing market dynamics for predictive analytics. I also made a bar chart to better visualize which states had the highest vs. lowest correlations based on the seaborn plot. 
 
 ## Modeling
-I implemented different machine learning models (Linear Regression, Ridge Regression, Random Forest, Neural Network) to predict HPI values of another state based on a closely correlated state pair. For correlation metrics, I calculated the fololowing values: 
-- Mean Squared Error (MSE): measures the average suared difference between the actual and predicted HPI values, with a lower difference corresponding to more accurate prediction
+I implemented different machine learning models (Linear Regression, Ridge Regression, Random Forest, Neural Network) to predict HPI values of another state based on a closely correlated state pair. For correlation metrics, I calculated the following values: 
+- Mean Squared Error (MSE): measures the average squared difference between the actual and predicted HPI values, with a lower difference corresponding to more accurate prediction
 - R^2 Score: variance explained by the model/total variance of the data, with a value closer to 1 corresponding to a more accurate prediction
 - Accuracy: proportion of correct predictions (both increases and decreases).
 - Precision: of all predicted increases, how many were actually increases?
 - Recall: Of all actual increases, how many were correctly predicted?
 - F1 Score: harmonic mean of precision and recall, balancing both metrics.
-- Confusion Matrix: table showing counts of true positives, true negatives, false positives, and false negatives.
+- Confusion Matrix:a  table showing counts of true positives, true negatives, false positives, and false negatives.
 - Classification Report: detailed summary of precision, recall, F1 score, and support (number of samples) for each class
 
 
